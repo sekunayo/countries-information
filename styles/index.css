@@ -7,9 +7,11 @@ body {
 }
 
 .body {
-    grid-template-columns: repeat(4,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fill,350px);
     grid-template-rows: repeat(auto-fill, 50vh);
     grid-row-gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -63,20 +65,9 @@ p {
     font-size: 1.5rem;
     text-decoration: underline;
 }
-
-.modal-container {
-    display: none;
+.error{
+    display: flex;
     justify-content: center;
-    position: fixed;
-    z-index: 1;
     align-items: center;
-    width: 100%;
-    height: 100%;
-}
-.modal-contents{
-    font-size: 1.3rem;
-}
-.error-input {
-    font-weight: 500;
-    font-size: 1.5rem;
+    height: 100vh;
 }
