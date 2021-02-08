@@ -7,17 +7,43 @@ body {
 }
 
 .body {
-    grid-template-columns: repeat(auto-fill,350px);
-    grid-template-rows: repeat(auto-fill, 50vh);
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 350px);
     justify-content: center;
     align-items: center;
 }
 
+@media only screen and (max-width: 767.98px) {
+    .body {
+        grid-template-rows: repeat(auto-fill, 50vh);
+        grid-row-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+    .body {
+        grid-template-rows: repeat(auto-fill, 48vh);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
+    .body {
+        grid-template-rows: repeat(auto-fill, 48vh);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .body {
+        grid-template-rows: repeat(auto-fill, 50vh);
+        grid-row-gap: 20px;
+    }
+}
+
 .card {
     background-color: white;
-    width: 80%;
-    height: 48vh;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -26,6 +52,34 @@ body {
     box-shadow: 0 20px 50px 10px rgba(0, 0, 0, 0.1);
     border-radius: 7px;
 
+}
+
+@media only screen and (max-width: 767.98px) {
+    .card {
+        width: 80%;
+        height: 48vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+    .card {
+        width: 98%;
+        height: 45vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
+    .card {
+        width: 95%;
+        height: 45vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .card {
+        width: 90%;
+        height: 48vh;
+    }
 }
 
 img {
@@ -61,13 +115,17 @@ p {
     display: none;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 12vh;
     font-size: 1.5rem;
     text-decoration: underline;
 }
-.error{
+
+.error {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+span{
+    text-align: center;
 }
